@@ -1,13 +1,13 @@
 package staticVariable;
 
 public class Demo {
-   static String name;
+    String name;
     public Demo(String name)
     {
         this.name=name;
     }
-    public static void show()
+    public static void show(Demo obj)
     {
-        System.out.println(name);
+        System.out.println(obj.name);
     }
 }
