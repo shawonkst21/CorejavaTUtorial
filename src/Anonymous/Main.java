@@ -1,10 +1,7 @@
 package Anonymous;
-class A
+ abstract class A
 {
-    public void show()
-    {
-        System.out.println("hello world");
-    }
+  public abstract void  show();
 }
 
 public class Main {
