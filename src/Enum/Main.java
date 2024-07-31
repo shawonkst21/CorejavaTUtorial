@@ -7,7 +7,10 @@ public class Main {
         //System.out.println(level.pending);
         for(level i:level.values())
         {
-            System.out.println(i);
+            if(i==level.success)
+            {
+                System.out.println("yea hu you are success");
+            }
         }
     }
 }
