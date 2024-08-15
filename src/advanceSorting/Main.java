@@ -4,13 +4,26 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-class student{
+class student implements Comparable{
     int age;
     String name;
     public student(int age,String name)
     {
         this.age=age;
         this.name=name;
+    }
+
+
+
+    public int compareTo(Object that) {
+        student s1=(student) that;
+        if(this.age>s1.age)
+        {
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
 
@@ -25,7 +38,7 @@ public class Main {
         std.add(new student (32,"uthfol"));
         std.add(new student(12,"nioti"));
         std.add(new student(44,"sadman"));
-        Collections.sort(std,com);
+        Collections.sort(std);
 
         for(student s:std)
         {
