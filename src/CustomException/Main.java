@@ -26,6 +26,6 @@ public class Main {
         line ans=new line(2,8,6,7);
         System.out.println(ans.getLength());
         System.out.println("jiii");
-
+        System.out.println("kiiii");
     }
 }
